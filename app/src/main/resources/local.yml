@@ -1,0 +1,13 @@
+serverHost: "localhost"
+serverPort: 8090
+redisConfig:
+  database: 1
+  servers:
+    - "redis://localhost:8091"
+    - "redis://localhost:8092"
+    - "redis://localhost:8093"
+portMappings:
+  - { name: "main",   port: 8090 }
+  - { name: "redis1", port: 8091 }
+  - { name: "redis2", port: 8092 }
+  - { name: "redis3", port: 8093 }
